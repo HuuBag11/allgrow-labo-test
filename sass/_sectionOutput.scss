@@ -1,0 +1,76 @@
+section#sectionOutput{
+    margin-top: 80px;
+
+    .section{
+        &__title{
+            &--image{
+                max-width: 122px;
+
+                @media (max-width : 768px){
+                    max-width: 115px;
+                }
+            }
+
+            &--content{
+                margin-top: 0;
+            }
+        }
+
+        &__content{
+            .content-item{
+                margin-top: 30px;
+                border-top: 1px solid $color-primary;
+
+                &:not(:first-child){
+                    margin-top: 50px;
+                }
+
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    margin-top: 23px;
+
+                    &.column-4{
+                        li{
+                            width: calc((100% / 4) - 11.25px);
+                            padding: 35px 40px 25px;
+                            background-color: $color-secondary;
+                            border-radius: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            @media (min-width: 1280px){
+                                min-height: 160px;
+                            }
+
+                            @media (max-width: 768px){
+                                width: calc((100% / 2) - 6px);
+                                gap: 15px;
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+
+                    .text{
+                        text-align: center;
+                        @include typo($font-primary, 16px, 500, 30px, $color-primary);
+
+                        @media (max-width: 768px){
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

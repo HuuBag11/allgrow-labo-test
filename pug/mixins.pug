@@ -1,0 +1,32 @@
+mixin guideItem(iconPath, altText, descLines)
+  li.sectionGuide__list--item
+    .icon
+      img(src=`./images/icons/${iconPath}.svg`, alt=altText)
+    .desc
+      each line in descLines
+        | #{line}
+        br
+
+mixin sectionTitle(imageSrc, imageAlt, title, desc)
+  .section__title
+    .section__title--image
+      img(src=imageSrc, alt=imageAlt)
+    .section__title--content
+      h2.section-title= title
+      .section-desc= desc
+
+mixin contentItem(title, items)
+  .content-item
+    h5.title--line= title
+    ul.content__list.column-4
+      each item in items
+        li.content__list--item
+          img(src=`./images/${item.image}`, alt=item.alt, style=item.style)
+          .text= item.text
+
+mixin contentItemFunction(title, items)
+  .content-item
+    h5.title--line!= title
+    ul
+      each item in items
+        li!= item

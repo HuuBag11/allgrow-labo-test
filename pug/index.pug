@@ -1,0 +1,154 @@
+include mixins.pug
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap' rel='stylesheet')
+  title AGL - test - Mai Huu Bang
+  link(rel='stylesheet' href='./general/main.css')
+.container
+  aside#sidebar
+    .sidebar-logo
+      .logo
+        img(src='./images/sidebar-logo.png' alt='sidebar logo')
+      button.btn--primary サポートサイト
+    ul.sidebar__list
+      li.sidebar__list--item
+        a(href='#' title='検査結果画面の解説')
+          span 検査結果画面の解説
+      li.sidebar__list--item
+        a(href='#' title='主な機能')
+          span 主な機能
+      li.sidebar__list--item
+        a(href='#' title='利用シーン別ガイド')
+          span 利用シーン別ガイド
+      li.sidebar__list--item
+        a(href='#' title='初めてご利用の方へ')
+          span 初めてご利用の方へ
+      li.sidebar__list--item
+        a(href='#' title='FAQ')
+          span FAQ
+  #content
+    header
+      .container
+        nav
+          .nav-left
+            .nav-item
+              a(href='#' title='トップ')
+                svg(xmlns='http://www.w3.org/2000/svg' width='17.875' height='15.889')
+                  path(d='M17.87 7.93c0 .558-.466.995-.994.995h-.993l.022 4.969c0 .087-.006.167-.016.251v.503c0 .686-.555 1.241-1.241 1.241h-.497c-.034 0-.068-.028-.102-.003-.043-.025-.087.003-.13.003h-1.754a1.241 1.241 0 0 1-1.241-1.241v-2.731a.992.992 0 0 0-.993-.993H7.945a.992.992 0 0 0-.993.993v2.731c0 .686-.556 1.241-1.242 1.241H3.975c-.046 0-.093-.003-.14-.006-.036.003-.074.006-.11.006h-.497a1.241 1.241 0 0 1-1.242-1.241v-3.476c0-.028.001-.059.003-.087v-2.16H.995A.984.984 0 0 1 0 7.93c0-.28.093-.527.31-.745L8.268.25C8.485.03 8.733 0 8.95 0c.217 0 .466.062.655.218l7.923 6.966c.248.218.375.466.341.745' fill='#7b7b7b' fill-rule='evenodd' data-name='パス 100020')
+                | トップ
+          ul.nav-right
+            li.nav-item
+              a(href='#' title='ログイン')
+                | ログイン
+                svg(xmlns='http://www.w3.org/2000/svg' width='14' height='14')
+                  path(d='M8 1a1 1 0 0 1 1-1h3.972c.162 0 .294.027.41.076.09.048.227.12.324.215 0 .001 0 .003.003.004.194.194.263.448.291.702V5a.999.999 0 1 1-2 0V3.416l-5.294 5.29a.998.998 0 1 1-1.412-1.412L10.584 2H9a1 1 0 0 1-1-1M0 3a2 2 0 0 1 2-2h3a1 1 0 1 1 0 2H2v9h9V9a.999.999 0 1 1 2 0v3c0 1.103-.897 2-2 2H2a2 2 0 0 1-2-2V3Z' fill='#afafaf' fill-rule='evenodd' data-name='パス 100241')
+            li.nav-item
+              a(href='#' title='お問い合わせ')
+                | お問い合わせ
+                svg(xmlns='http://www.w3.org/2000/svg' width='20' height='15')
+                  path(d='M0 2.5A2.5 2.5 0 0 1 2.5 0h15C18.879 0 20 1.12 20 2.5v10c0 1.379-1.121 2.5-2.5 2.5h-15C1.12 15 0 13.879 0 12.5v-10Zm1.875 0v.863l6.738 5.532a2.18 2.18 0 0 0 2.774 0l6.738-5.532v-.898c0-.309-.281-.625-.625-.625h-15c-.345 0-.625.316-.625.625V2.5Zm0 3.29v6.71c0 .344.28.625.625.625h15a.627.627 0 0 0 .625-.625V5.79l-5.547 4.554c-1.5 1.23-3.656 1.23-5.191 0L1.875 5.789Z' fill='#afafaf' fill-rule='evenodd' data-name='パス 100242')
+        .search__form
+          .search__form--title
+            | どんな事でお困りですか？
+          .search__form--main
+            form(action='')
+              label(for='search-input')
+                svg(xmlns='http://www.w3.org/2000/svg' width='18.311' height='18.313')
+                  g(data-name='グループ 47495' clip-path='url("#a")')
+                    path(d='m17.893 15.869-4.281-4.281a7.436 7.436 0 0 0 1.197-5.175C14.37 3.14 11.688.476 8.412.062a7.445 7.445 0 0 0-8.35 8.35c.414 3.277 3.078 5.962 6.351 6.398a7.435 7.435 0 0 0 5.176-1.197l4.28 4.281a1.43 1.43 0 1 0 2.024-2.025M2.829 7.439a4.583 4.583 0 0 1 4.578-4.578 4.583 4.583 0 0 1 4.578 4.578 4.583 4.583 0 0 1-4.578 4.578 4.583 4.583 0 0 1-4.578-4.578' fill='#7b7b7b' fill-rule='evenodd' data-name='パス 100243')
+                  defs
+                    clippath#a
+                      path(d='M0 0h18.311v18.313H0V0z' data-name='長方形 6807')
+                input#search-input(type='search' placeholder='キーワードを入力')
+              button.btn--primary(type='submit')
+                | 検索
+    main
+      section#sectionGuide
+        .sectionGuide__title.section__title
+          .sectionGuide__title--image.section__title--image
+            img(src='./images/guide-title.png' alt='Guide title image')
+          .sectionGuide__title--content.section__title--content
+            h2.section-title 利用シーン別ガイド
+            .section-desc SALES SCOREを様々なシーンでご活用いただく方法をご紹介します。
+              ul.sectionGuide__list
+                +guideItem('guide-icon-1', 'icon one', [
+                  '受検者の営業活動の特徴を',
+                  '見える化したい'
+                ])
+                +guideItem('guide-icon-2', 'icon one', [
+                  'ポテンシャルの高い人材を',
+                  '採用したい'
+                ])
+                +guideItem('guide-icon-3', 'icon three', [
+                  '離職率を改善したい'
+                ])
+                +guideItem('guide-icon-4', 'icon fourth', [
+                  '成績優秀層を分析したい'
+                ])
+                +guideItem('guide-icon-5', 'icon fifth', [
+                  '自社の特徴を理解したい'
+                ])
+                +guideItem('guide-icon-6', 'icon six', [
+                  '社員のコミュニケーションを',
+                  '改善したい'
+                ])
+      section#sectionOutput
+        +sectionTitle('./images/output-title.png', 'output title image', '検査結果画面の解説', 'SALES SCOREのアウトプット項目について紹介します。')
+        .section__content
+          +contentItem('適性検査のアウトプット', [
+            { image: 'output-1-1.png', alt: 'image ouput 1-1', text: 'データサマリー' },
+            { image: 'output-1-2.png', alt: 'image output 1-2', text: 'データ詳細' },
+            { image: 'output-1-3.png', alt: 'image output 1-3', text: 'データ比較', style: 'max-width: 107px;' }
+          ])
+
+          +contentItem('企業傾向分析', [
+            { image: 'ouput-2-1.png', alt: 'image output 2-1', text: '全体比較', style: 'max-width: 107px;' },
+            { image: 'output-2-2.png', alt: 'image ouput 2-2', text: '営業タイプ傾向', style: 'max-width: 100px;' },
+            { image: 'output-2-3.png', alt: 'image output 2-3', text: 'High-Low分析', style: 'max-width: 107px;' },
+            { image: 'output-2-4.png', alt: 'image output 2-4', text: '構成比比較', style: 'max-width: 105px;' }
+          ])
+
+          +contentItem('検査結果詳細', [
+            { image: 'output-3-1.png', alt: 'image output 3-1', text: '表示される予測値', style: 'max-width: 134px;' },
+            { image: 'output-3-2.png', alt: 'image output 3-2', text: '表示される営業タイプ', style: 'max-width: 109px;' }
+          ])
+      section#sectionFunction
+        +sectionTitle('./images/function-title.png', 'function title image', '主な機能', 'SALES SCOREの利用方法及び、ツールに表示される項目について紹介します。')
+        section.section__content
+          +contentItemFunction('管理者', [
+            '管理者の登録・編集',
+            '表示される管理者情報'
+          ])
+
+          +contentItemFunction('従業員', [
+            '従業員の登録・編集',
+            '表示される従業員情報'
+          ])
+
+          +contentItemFunction('従業員', [
+            '従業員の登録・編集',
+            '表示される従業員情報'
+          ])
+
+          +contentItemFunction('実績データの登録', [
+            '実績の登録・編集',
+            '分析対象範囲の指定',
+            '成績区分の指定'
+          ])
+
+          +contentItemFunction('適性検査', [
+            '適性検査の推奨環境',
+            '受検メールの送信'
+          ])
+
+          +contentItemFunction('契約について', [
+            '契約情報の確認',
+            '解約の方法'
+          ])
+.copyright
+  p Copyright &copy; 2022 SALES SCORE All Right Reserved. .

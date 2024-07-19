@@ -1,0 +1,55 @@
+section#sectionGuide{
+    .sectionGuide{
+        &__list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            margin-top: 23px;
+
+            &--item{
+                border: 1px solid $color-primary;
+                border-radius: 10px;
+                padding: 22px 20px 27px;
+
+                width: calc((100% / 3) - 10px );
+                max-height: 145px;
+
+                @media (max-width: 768px){
+                    width: calc((100% / 2) - 10px );
+                    padding: 20px;
+                }
+
+                .icon{
+                    min-height: 27px;
+                    width: max-content;
+                    margin: 0 auto;
+
+                    @media (max-width: 768px){
+                        min-height: unset;
+                    }
+
+                    img{
+                        @media (max-width: 768px){
+                            max-width: 80%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                .desc{
+                    margin-top: 12px;
+                    @include typo($font-primary,18px,700,30px,$color-primary);
+                    @include limit-row(2);
+                    text-align: center;
+
+                    @media(max-width: 768px){
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
