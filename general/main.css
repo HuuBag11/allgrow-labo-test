@@ -576,6 +576,9 @@ section#sectionOutput .section__content .content-item {
 section#sectionOutput .section__content .content-item:not(:first-child) {
   margin-top: 50px;
 }
+section#sectionOutput .section__content .content-item:last-child {
+  margin-top: 60px;
+}
 section#sectionOutput .section__content .content-item ul {
   list-style: none;
   display: flex;
@@ -585,7 +588,7 @@ section#sectionOutput .section__content .content-item ul {
 }
 section#sectionOutput .section__content .content-item ul.column-4 li {
   width: calc(25% - 11.25px);
-  padding: 35px 40px 25px;
+  padding: 35px 28px 25px;
   background-color: #EAF1F7;
   border-radius: 10px;
   display: flex;

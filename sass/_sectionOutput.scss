@@ -25,6 +25,10 @@ section#sectionOutput{
                     margin-top: 50px;
                 }
 
+                &:last-child{
+                    margin-top: 60px;
+                }
+
                 ul{
                     list-style: none;
                     display: flex;
@@ -35,7 +39,7 @@ section#sectionOutput{
                     &.column-4{
                         li{
                             width: calc((100% / 4) - 11.25px);
-                            padding: 35px 40px 25px;
+                            padding: 35px 28px 25px;
                             background-color: $color-secondary;
                             border-radius: 10px;
                             display: flex;
