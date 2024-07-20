@@ -33,12 +33,16 @@ section#sectionOutput{
                     list-style: none;
                     display: flex;
                     flex-wrap: wrap;
-                    gap: 12px;
-                    margin-top: 23px;
+                    gap: 16px;
+                    margin-top: 17px;
+
+                    @media (max-width: 768px){
+                        gap: 12px;
+                    }
 
                     &.column-4{
                         li{
-                            width: calc((100% / 4) - 11.25px);
+                            width: calc((100% / 4) - 12px);
                             padding: 35px 28px 25px;
                             background-color: $color-secondary;
                             border-radius: 10px;

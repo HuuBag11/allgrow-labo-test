@@ -5,7 +5,7 @@
     height: max-content;
     position: sticky;
     top: 10px;
-    border: 1px solid #E1E8EF;
+    border: 2px solid #E1E8EF;
     transition: all 0.4s ease;
 
     &.open{
@@ -117,7 +117,7 @@
 
             a{
                 @include typo($font-primary,16px,400,18px,$color-third);
-                padding: 25px 45px 25px 19px;
+                padding: 26px 45px 25px 19px;
                 display: block;
                 position: relative;
                 overflow: hidden;

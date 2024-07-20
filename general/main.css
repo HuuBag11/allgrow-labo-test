@@ -136,7 +136,7 @@ body > .container {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 38px;
   color: #42A7C2;
 }
 @media (max-width: 768px) {
@@ -149,13 +149,14 @@ body > .container {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 24px;
   color: #333333;
   margin-top: 16px;
 }
 @media (max-width: 768px) {
   .section__title--content .section-desc {
     font-size: 14px;
+    line-height: 18px;
     margin-top: 10px;
   }
 }
@@ -166,13 +167,14 @@ body > .container {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 29px;
   color: #42A7C2;
-  padding-top: 27px;
+  padding-top: 22px;
 }
 @media (max-width: 768px) {
   .title--line {
     font-size: 16px;
+    line-height: 22px;
   }
 }
 .title--line::before {
@@ -405,7 +407,7 @@ header .search__form--title {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 100%;
+  line-height: 24px;
   color: #333333;
   display: flex;
   align-items: center;
@@ -414,6 +416,7 @@ header .search__form--title {
 @media (max-width: 768px) {
   header .search__form--title {
     font-size: 14px;
+    line-height: 100%;
   }
 }
 header .search__form form {
@@ -583,11 +586,16 @@ section#sectionOutput .section__content .content-item ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 23px;
+  gap: 16px;
+  margin-top: 17px;
+}
+@media (max-width: 768px) {
+  section#sectionOutput .section__content .content-item ul {
+    gap: 12px;
+  }
 }
 section#sectionOutput .section__content .content-item ul.column-4 li {
-  width: calc(25% - 11.25px);
+  width: calc(25% - 12px);
   padding: 35px 28px 25px;
   background-color: #EAF1F7;
   border-radius: 10px;
@@ -642,10 +650,13 @@ section#sectionFunction .section__content {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
   grid-column-gap: 15px;
-  grid-row-gap: 36px;
+  grid-row-gap: 33px;
 }
 section#sectionFunction .section__content .content-item {
   border-top: 1px solid #42A7C2;
+}
+section#sectionFunction .section__content .content-item:nth-child(5) ul, section#sectionFunction .section__content .content-item:nth-child(6) ul {
+  margin-top: 10px;
 }
 section#sectionFunction .section__content .content-item ul {
   margin-top: 20px;
@@ -678,7 +689,7 @@ section#sectionFunction .section__content .content-item ul li {
   height: max-content;
   position: sticky;
   top: 10px;
-  border: 1px solid #E1E8EF;
+  border: 2px solid #E1E8EF;
   transition: all 0.4s ease;
 }
 #sidebar.open {
@@ -787,7 +798,7 @@ section#sectionFunction .section__content .content-item ul li {
   font-weight: 400;
   line-height: 18px;
   color: #333333;
-  padding: 25px 45px 25px 19px;
+  padding: 26px 45px 25px 19px;
   display: block;
   position: relative;
   overflow: hidden;

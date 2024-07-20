@@ -176,13 +176,14 @@ header{
         }
 
         &--title{
-            @include typo($font-primary,16px,400,100%,$color-third);
+            @include typo($font-primary,16px,400,24px,$color-third);
             display: flex;
             align-items: center;
             margin-right: 19px;
 
             @media (max-width: 768px){
                 font-size: 14px;
+                line-height: 100%;
             }
         }
 
