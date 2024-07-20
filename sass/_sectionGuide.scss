@@ -1,4 +1,13 @@
 section#sectionGuide{
+    .section__title{
+        &--content{
+            @media (min-width: 1024px){
+                margin-top: -10px;
+                margin-left: 25px;
+            }
+        }
+    }
+
     .sectionGuide{
         &__list{
             display: flex;
