@@ -748,7 +748,7 @@ section#sectionFunction .section__content .content-item ul li {
   width: 100%;
   height: auto;
 }
-#sidebar .sidebar__logo button {
+#sidebar .sidebar__logo a.btn--primary {
   margin-top: 18px;
   padding: 8px;
   padding-right: 6px;
@@ -758,9 +758,13 @@ section#sectionFunction .section__content .content-item ul li {
   line-height: 100%;
   height: 43px;
   letter-spacing: 1.8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 992px) {
-  #sidebar .sidebar__logo button {
+  #sidebar .sidebar__logo a.btn--primary {
     padding: 12px 20px;
     font-size: 16px;
     height: auto;
